@@ -23,7 +23,7 @@ module.exports = {
     }
   },
 
-  postprocessTree: function(type, tree) {
+  preprocessTree: function(type, tree) {
     if (type === 'all' && this.options && this.options.enabled) {
       tree = replace(tree, this.options);
     }
